@@ -2,6 +2,10 @@ class OrdersController < ApplicationController
 
   def show
     @order = Order.find(params[:id])
+    p @order.line_items
+    order_items = @order.line_items 
+    #Includes the product information in @line_items
+    @line_items = order_items.map { |item| { line_item: item, product: Product.find(item.product_id)}}
   end
 
   def create
@@ -45,12 +49,14 @@ class OrdersController < ApplicationController
     enhanced_cart.each do |entry|
       product = entry[:product]
       quantity = entry[:quantity]
+      puts "Product: ........ #{product}"
       order.line_items.new(
         product: product,
         quantity: quantity,
         item_price: product.price,
         total_price: product.price * quantity
       )
+      puts order.line_items
     end
     order.save!
     order

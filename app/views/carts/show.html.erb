@@ -4,7 +4,11 @@
     <h1>My Cart</h1>
   </header>
 
+  <% if cart.size == 0  %>
+    <div class="alert alert-danger" role="alert"> Please add items to your cart </div>
+  <% else %> 
   <div class="panel panel-default items">
+
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -25,7 +29,7 @@
             TOTAL:
           </th>
           <th>
-            <%= cart_subtotal_cents / 100.0 %>
+            <%= humanized_money_with_symbol cart_subtotal_cents / 100.0 %>
           </th>
         </tr>
       </tfoot>
@@ -48,5 +52,5 @@
       <% end %>
     </div>
   </div>
-
+<% end %>
 </section>

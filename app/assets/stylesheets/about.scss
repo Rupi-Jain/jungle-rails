@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  width: 1000px;
+}
+.one {
+  width: 50%;
+  background-color: rgb(162, 224, 68);
+  align-items: center;
+}
+.two {
+  width: 50%;
+  background-color: rgb(47, 231, 255);
+  padding: 20px;
+  text-align: center;
+}
+
+.about-img {
+  height: 400px;
+  width: 400px;
+}

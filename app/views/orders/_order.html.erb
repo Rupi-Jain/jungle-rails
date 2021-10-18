@@ -1,31 +1,28 @@
+<% @order.line_items.each do |item| %>
 <section class="products-show">
-
   <header class="page-header">
-    <h1><%= link_to @product.category.name, @product.category %> &raquo; <%= @product.name %></h1>
+
   </header>
-
   <article class="product-detail">
-
     <div class="row">
-
       <div class="col-sm-4">
-        <%= image_tag @product.image.url, class: 'main-img' %>
+        <%= image_tag item.product.image.url, class: 'main-img' %>
       </div>
-
       <div class="col-sm-8">
         <dl class="dl-horizontal">
           <dt>Name</dt>
-          <dd><%= @product.name %></dd>
+          <dd><%= item.product.name %></dd>
           <dt>Description</dt>
-          <dd><%= @product.description %></dd>
+          <dd><%= item.product.description %></dd>
           <dt>Quantity</dt>
-          <dd><%= @product.quantity %></dd>
+          <dd><%= item.quantity %></dd>
           <dt>Price</dt>
-          <dd><%= humanized_money_with_symbol @product.price %></dd>
+          <dd><%= humanized_money_with_symbol item.item_price %></dd>
+          <dt>Email</dt>
+          <dd><%= @order.email %></dd>
         </dl>
       </div>
     </div>
-
   </article>
-
 </section>
+<% end %>
