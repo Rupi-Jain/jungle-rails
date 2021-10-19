@@ -6,7 +6,7 @@ RSpec.describe Product, type: :model do
     
     describe 'validation for names' do
 
-      it "product has everything" do
+      xit "product has everything" do
         @category = Category.new(name: "name")
         @product = Product.new(
           name: 'name',
@@ -18,7 +18,7 @@ RSpec.describe Product, type: :model do
       end
    
 
-      it "has no name" do
+      xit "has no name" do
         @category = Category.new(name: "name")
         @product = Product.new(
           name: '',
@@ -31,7 +31,7 @@ RSpec.describe Product, type: :model do
       end
     end    
 
-    it "has no price" do
+    xit "has no price" do
       @category = Category.new(name: "name")
       @product = Product.new(
         name: 'name',
@@ -43,7 +43,7 @@ RSpec.describe Product, type: :model do
       expect(@product.errors[:price_cents].size).to eq(1)
     end
 
-    it "has no quantity" do
+    xit "has no quantity" do
       @category = Category.new(name: "name")
       @product = Product.new(
         name: 'name',
@@ -55,7 +55,7 @@ RSpec.describe Product, type: :model do
       expect(@product.errors[:quantity].size).to eq(1)
     end
 
-    it "has no category" do
+    xit "has no category" do
       @product = Product.new(
         name: 'name',
         price_cents: 2000 ,
