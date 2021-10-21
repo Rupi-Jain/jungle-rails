@@ -49,14 +49,14 @@ main section.categories-show {
         border-bottom-left-radius: 20px;
         font-size: 0.8em;
       }
-      aside.soldout {
+      aside.soldOut {
         position: absolute;
         top: 0;
         left: 0;
         padding: 10px;
-        background-color: rgb(243, 96, 96);
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+        background-color: rgb(248, 124, 124);
+        border-top-left-radius: 4px;
+        border-bottom-right-radius: 20px;
         font-size: 0.8em;
         color: white;
       }
