@@ -30,5 +30,15 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 - Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 - PostgreSQL 9.x
-- Stripe
-  !["name"](url)
+
+  !["products.png"](https://github.com/Rupi-Jain/jungle-rails/blob/master/doc/products.png)
+
+  !["admin.png"](https://github.com/Rupi-Jain/jungle-rails/blob/master/doc/admin.png)
+
+  !["admin_products.png"](https://github.com/Rupi-Jain/jungle-rails/blob/master/doc/admin_products.png)
+
+  !["signup.png"](https://github.com/Rupi-Jain/jungle-rails/blob/master/doc/signup.png)
+
+  !["login.png"](https://github.com/Rupi-Jain/jungle-rails/blob/master/doc/login.png)
+
+  !["my_cart.png"](https://github.com/Rupi-Jain/jungle-rails/blob/master/doc/my_cart.png)
